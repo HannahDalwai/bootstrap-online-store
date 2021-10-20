@@ -493,13 +493,13 @@
   <div class="display-2">Contact Page </div>
 
 
- <form method="post"action="https://formspree.io/f/moqyzwwl">
-    <form action="/action_page.php">
-    <form class="was-validated">
+ 
+
+    <form class="was-validated" method="post"action="https://formspree.io/f/moqyzwwl">
    
     <div class="mb-3">
       <label for="validationTextarea" class="form-label">Comment</label>
-      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Insert Comment/Inquiry Here" required></textarea>
+      <textarea  name="comment" class="form-control is-invalid" id="validationTextarea" placeholder="Insert Comment/Inquiry Here" required></textarea>
       <div class="invalid-feedback">
         Please enter a message in the textarea.
       </div>
@@ -507,7 +507,7 @@
 
     <div class="mb-3">
       <label for="validationTextarea" class="form-label">Email Address</label>
-      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Insert Email Address Here" required></textarea>
+      <input name="email" class="form-control is-invalid" id="validationTextarea" placeholder="Insert Email Address Here" required></input>
       <div class="invalid-feedback">
         Please enter a message in the textarea.
       </div>
@@ -515,7 +515,7 @@
 
   
     <div class="form-check mb-3">
-      <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+      <input name="check" type="checkbox" class="form-check-input" id="validationFormCheck1" required>
       <label class="form-check-label" for="validationFormCheck1">I am Human</label>
       <div class="invalid-feedback">Check box to verify</div>
     </div>
@@ -523,14 +523,14 @@
 
   
     <div class="mb-3">
-      <select class="form-select" required aria-label="select example">
+      <select  class="form-select" required aria-label="select example">
         <option value="">Subject matter</option>
         <option value="1">Pricing</option>
         <option value="2">Customer Help</option>
         <option value="3">Events</option>
         <option value="4">Book Club</option>
       </select>
-      <div class="invalid-feedback">Example invalid select feedback</div>
+      <div  class="invalid-feedback"  >Example invalid select feedback</div>
     </div>
   
    
